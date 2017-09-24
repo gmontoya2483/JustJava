@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private final int MAX_ORDERS=25;
     private final int MIN_ORDERS=0;
 
+    static final int SENT_EMAIL = 1;
 
     int quantity=0;
 
@@ -155,6 +156,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     private void sendEmail(String message, String name){
 
         String[] addresses={getString(R.string.email_email)};
@@ -166,11 +169,45 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT,message);
         if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
+            startActivityForResult(intent,SENT_EMAIL);
         }
 
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == SENT_EMAIL) {
+            quantity=0;
+            displayQuantity(quantity);
+            blankName();
+            setNoChocolate();
+            setNoWhippedCream();
+
+
+        }
+    }
+
+    private void blankName(){
+        EditText nameEditText=(EditText) findViewById(R.id.name_field);
+        nameEditText.setText("");
+    }
+
+
+    private void setNoChocolate () {
+        CheckBox hasChocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_check_box);
+        hasChocolateCheckBox.setChecked(false);
+
+    }
+
+    private void setNoWhippedCream () {
+        CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_check_box);
+        hasWhippedCreamCheckBox.setChecked(false);
+
+    }
+
+
+
 
 
 }
