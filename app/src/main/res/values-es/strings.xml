@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="button_order">Orden</string>
+    <string name="header_quantity">Cantidad</string>
+    <string name="header_toppings">Ingredientes</string>
+    <string name="hint_name">Nombre</string>
+    <string name="summary_chocolate">¿Agregar Chocolate? <xliff:g id="hasChocolate" example="True">%b</xliff:g></string>
+    <string name="summary_name">Nombre: <xliff:g id="name" example="Gabriel">%s</xliff:g></string>
+    <string name="summary_quantity">Cantidad:  <xliff:g id="quantity" example="5">%d</xliff:g></string>
+    <string name="summary_thank_you">¡Gracias!</string>
+    <string name="summary_total">Total: <xliff:g id="total" example="25">%s</xliff:g></string>
+    <string name="summary_whipped_cream">¿Agregar crema batida? <xliff:g id="hasCream" example="True">%b</xliff:g></string>
+    <string name="topping_chocolate">Chocolate</string>
+    <string name="topping_whipped_cream">Creama batida</string>
+    <string name="email_subject">Orden JustJava para <xliff:g id="name" example="Gabriel">%s</xliff:g></string>
+</resources>

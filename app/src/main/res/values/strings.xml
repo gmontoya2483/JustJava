@@ -1,3 +1,45 @@
-<resources>
-    <string name="app_name">Just Java</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">Just Java</string>
+
+    <!-- Hint text for entering the name [CHAR LIMIT=30] -->
+    <string name="hint_name">Name</string>
+
+    <!-- Header text for the list of toppings [CHAR LIMIT=20] -->
+    <string name="header_toppings">Toppings</string>
+    <!-- Topping text for whipped cream check box [CHAR Limit=50] -->
+    <string name="topping_whipped_cream">Whipped cream</string>
+    <!-- Topping text for whipped cream check box [CHAR Limit=50] -->
+    <string name="topping_chocolate">Chocolate</string>
+
+    <!-- Header text for quantity section [CHAR LIMIT=20] -->
+    <string name="header_quantity">Quantity</string>
+    <!-- - text for the minus button [CHAR LIMIT=1] -->
+    <string name="button_minus" translatable="false">-</string>
+    <!-- 0 text for the displayed quantity [INT LIMIT=1] -->
+    <string name="value_0" translatable="false">0</string>
+    <!-- + text for the minus button [CHAR LIMIT=1] -->
+    <string name="button_plus" translatable="false">+</string>
+
+    <!-- Button text for sending the order [CHAR LIMIT=20] -->
+    <string name="button_order">Order</string>
+
+    <!-- Thank you message for the order summary [CHAR LIMIT=NONE] -->
+    <string name="summary_thank_you">Thank you!</string>
+
+    <!-- Name for the order summary. It will be shown in the format of "Name: Gabriel" where Gabriel is the user's name [CHAR LIMIT=NONE]-->
+    <string name="summary_name">Name: <xliff:g id="name" example="Gabriel">%s</xliff:g></string>
+    <!-- add whipped cream check box for the order summary. It will be shown in the format of "Add whipped cream? True" where True is boolean value [CHAR LIMIT=NONE]-->
+    <string name="summary_whipped_cream">Add whipped cream? <xliff:g id="hasCream" example="True">%b</xliff:g></string>
+    <!-- add chocolate check box for the order summary. It will be shown in the format of "Add Chocolate? True" where True is boolean value [CHAR LIMIT=NONE]-->
+    <string name="summary_chocolate">Add Chocolate? <xliff:g id="hasChocolate" example="True">%b</xliff:g></string>
+    <!-- quantity of coffees for the order summary. It will be shown in the format of "Quantity: 5" where [CHAR LIMIT=NONE]-->
+    <string name="summary_quantity">Quantity:  <xliff:g id="quantity" example="5">%d</xliff:g></string>
+    <!-- total price for the order summary. It will be shown in the format of "Total: $25" [CHAR LIMIT=NONE]-->
+    <string name="summary_total">Total: <xliff:g id="total" example="25">%s</xliff:g></string>
+
+
+    <string name="email_email" translatable="false">gmontoya@ciudad.com.ar</string>
+    <string name="email_subject">JustJava order for <xliff:g id="name" example="Gabriel">%s</xliff:g></string>
+
+
 </resources>
